@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 const images = [
-  "https://random.imagecdn.app/500/150",
-  "https://random.imagecdn.app/500/150",
-  "https://random.imagecdn.app/500/150",
-  // { imgId: 1, img: "https://random.imagecdn.app/500/150" },
-  // { imgId: 2, img: "https://random.imagecdn.app/500/150" },
-  // { imgId: 3, img: "https://random.imagecdn.app/500/150" },
+  // "https://random.imagecdn.app/500/150",
+  // "https://random.imagecdn.app/500/150",
+  // "https://random.imagecdn.app/500/150",
+  { imgId: 1, img: "https://random.imagecdn.app/500/150" },
+  { imgId: 2, img: "https://random.imagecdn.app/500/150" },
+  { imgId: 3, img: "https://random.imagecdn.app/500/150" },
 ];
 
 export default function App() {
