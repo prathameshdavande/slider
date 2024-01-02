@@ -5,8 +5,8 @@ const images = [
   // "https://random.imagecdn.app/500/150",
   // "https://random.imagecdn.app/500/150",
   { imgId: 1, img: "https://random.imagecdn.app/500/150" },
-  { imgId: 2, img: "https://random.imagecdn.app/500/150" },
-  { imgId: 3, img: "https://random.imagecdn.app/500/150" },
+  // { imgId: 2, img: "https://random.imagecdn.app/500/150" },
+  // { imgId: 3, img: "https://random.imagecdn.app/500/150" },
 ];
 
 export default function App() {
@@ -34,29 +34,34 @@ function Cards({ sliderImages, onArrowLeft, onArrowRight }) {
   return (
     <div className="cards">
       {sliderImages.map((sliderImage, i) => (
-        <Card
-          sliderImage={sliderImage}
-          key={sliderImage.id}
-          onArrowLeft={onArrowLeft}
-          onArrowRight={onArrowRight}
-        />
+        <div>
+          <span onClick={onArrowLeft} className="arrows">
+            <i class="gg-push-chevron-left"></i>
+          </span>
+          {/* <div className="card">
+            <img src={sliderImage.img} alt="abc" />
+          </div> */}
+          <span onClick={onArrowRight} className="arrows">
+            <i class="gg-push-chevron-right"></i>
+          </span>
+        </div>
       ))}
     </div>
   );
 }
 
-function Card({ sliderImage, onArrowLeft, onArrowRight }) {
-  return (
-    <div>
-      <div className="card">
-        <span onClick={onArrowLeft}>
-          <i class="gg-push-chevron-left"></i>
-        </span>
-        <img src={sliderImage.img} alt="abc" />
-        <span onClick={onArrowRight}>
-          <i class="gg-push-chevron-right"></i>
-        </span>
-      </div>
-    </div>
-  );
-}
+// function Card({ sliderImage, onArrowLeft, onArrowRight }) {
+//   return (
+//     <div>
+//       <div className="card">
+//         <span onClick={onArrowLeft}>
+//           <i class="gg-push-chevron-left"></i>
+//         </span>
+//         <img src={sliderImage.img} alt="abc" />
+//         <span onClick={onArrowRight}>
+//           <i class="gg-push-chevron-right"></i>
+//         </span>
+//       </div>
+//     </div>
+//   );
+// }

@@ -55,3 +55,7 @@ img {
   width: inherit;
   padding: 20px;
 }
+
+.arrows {
+  position: relative;
+}
