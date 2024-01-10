@@ -1,61 +1,46 @@
-@import url("https://unpkg.com/css.gg@2.0.0/icons/css/push-chevron-right.css");
-@import url("https://unpkg.com/css.gg@2.0.0/icons/css/push-chevron-left.css");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 62.5%;
-}
-
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-}
-.app {
-  height: 50rem;
-  background-color: red;
-  padding: 20px;
-  margin: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cards {
-  display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr;
-  gap: 4px; */
-}
-
-.card {
-  display: flex;
-  height: 25rem;
-  width: 25rem;
-  justify-content: center;
-  align-items: center;
-  background-color: yellow;
+.slider {
   position: relative;
-
-  /* visibility: hidden; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* span {
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+}
+
+.right-arrow {
   position: absolute;
   top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* .slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
 } */
-
-img {
-  height: inherit;
-  width: inherit;
-  padding: 20px;
-}
-
-.arrows {
-  position: relative;
-}
